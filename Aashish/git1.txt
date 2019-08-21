@@ -8,4 +8,6 @@ Working with new project in a Repo
 
 ->git commit -m ""
 
+->git pull origin master
+
 ->git push origin master
