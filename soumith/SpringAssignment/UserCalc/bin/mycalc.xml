@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	
+	
+	<bean id="user" class="com.anvesh.usercalc.User">
+		<property name="name" value="anvesh"></property>
+		<property name="calc" ref="calca"></property>
+	</bean>
+	<bean id="calca" class="com.anvesh.usercalc.CalcA"></bean>
+	<bean id="calcb" class="com.anvesh.usercalc.CalcB"></bean>
+</beans>
