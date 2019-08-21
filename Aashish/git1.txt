@@ -1,0 +1,11 @@
+Working with new project in a Repo
+
+-> git clone <repo>
+
+->cd <repo-folder>
+
+->git add -A
+
+->git commit -m ""
+
+->git push origin master
