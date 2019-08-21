@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="empBean" class="com.sj.emp.Emp" autowire="byName">
+		<property name="name" value="anvesh"></property>
+		<property name="id" value="1"></property>
+		
+	</bean>
+	<bean id="d" class="com.sj.emp.Salesdept">
+		<property name="dept" value="Sales"></property>
+	</bean>
+	<bean id="d1" class="com.sj.emp.Purchasedept">
+		<property name="dept" value="purchase"></property>
+	</bean>
+	
+	
+
+</beans>
