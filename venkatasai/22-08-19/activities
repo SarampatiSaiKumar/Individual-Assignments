@@ -3,7 +3,16 @@ JS vs TS
 operators in TS
 About TS in tpoint
 
+Reading Activity
 
-practical
-create a MovieMAnagment app in TS
-example using TS ternary operator
+1. Highlight the differences between JS & TS
+
+2. Highlight the operators in Ts.
+
+3. Read more about Typescript in tutorial point.
+
+Practical Activity
+
+1. Create classes & functions for Movie management app
+
+2. Create an example using TS ternary operator.
