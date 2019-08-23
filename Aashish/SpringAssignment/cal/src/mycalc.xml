@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	
+	
+	<bean id="user" class="com.jayanth.usercalc.User">
+		<property name="name" value="Gemini"></property>
+		<property name="calc" ref="calcb"></property>
+	</bean>
+	<bean id="calca" class="com.jayanth.usercalc.CalcA"></bean>
+	<bean id="calcb" class="com.jayanth.usercalc.CalcB"></bean>
+</beans>
