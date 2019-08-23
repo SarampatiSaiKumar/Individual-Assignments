@@ -1,12 +1,11 @@
-class ternary_operator  
+class TernaryOperator  
 {  
-    condition()  
+    check(first:number,second:number)  
     {  
-        var first = 5;  
-        var second = 3;  
-        var result = (first > second) ? "That is true : 5>3" : "That is false : 5<3";  
-        console.log(result); 
+          
+        var res = (first > second) ? first+" is greater than "+second : second+" is greater than "+first;  
+        console.log(res); 
     }  
 }  
-var obj = new ternary_operator();  
-obj.condition();   
+var obj = new TernaryOperator();  
+obj.check(4,5);   
