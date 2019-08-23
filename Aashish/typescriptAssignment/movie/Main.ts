@@ -6,7 +6,7 @@ var i;
 for( i=0;i<data.length;i++){
     var m =data[i]
     var mv:Movie= new Movie(m.title,m.overview,m.release_date ,m.id,m.vote_average,m.poster_path);
-   // console.log(mv);
+   
     Movies.push(mv);
 }
 for( i=0;i<Movies.length;i++){
@@ -15,7 +15,7 @@ for( i=0;i<Movies.length;i++){
    console.log(mv.getTitle());
     
 }
-//console.log(Movies)
+
 Movies.forEach((m) =>
      console.log(m.getId(),m.getTitle())
 );
