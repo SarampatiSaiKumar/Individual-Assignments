@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+  
+<bean id="currency" class="com.sj.cur.Currency">
+ <property name="name" value="us"/>
+ <property name="amount" value="500"/>
+ </bean>
+ <bean id="currency1" class="com.sj.cur.Currency">
+ <property name="name" value="Eur"/>
+ <property name="amount" value="500"/>
+ </bean>
+
+</beans>

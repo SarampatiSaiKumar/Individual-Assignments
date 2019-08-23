@@ -1,0 +1,20 @@
+-> git config --global user.email "aashishreds@gmail.com"
+
+-> git clone <repo>   //repository link
+
+->git checkout <commitversion>   //ref-heads-master
+
+->git checkout --branch <branchname>
+
+
+New commits must be added to local version of repo
+
+->git add -A
+
+->git commit -m "MEssage"    //commits all files
+
+Push to git cloud /github.com
+
+->git push origin master
+
+->
