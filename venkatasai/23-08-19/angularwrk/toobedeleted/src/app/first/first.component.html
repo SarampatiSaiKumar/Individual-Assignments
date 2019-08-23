@@ -1,0 +1,17 @@
+<p>first works!</p>
+<h1>
+        welcome {{title}}
+        
+        </h1>
+        <!-- 
+        <code>
+          [htmlAttribute]="TsProperty" => Ts to Html
+          (angularEvent)="FunctionNAme()" => Html to Ts
+        </code> -->
+        <h5>
+        City: <input type="text" [(ngModel)]="cityName"/>
+        State: <input type="text" [value]="stateName"/>
+        Country: <input type="text" [value]="countryName  "/>
+        
+        <button (click) ="onClick(cityName,stateName,countryName)">Update</button>
+        </h5>
