@@ -2,9 +2,9 @@ class ternary_operator
 {  
     condition()  
     {  
-        var first = 5;  
-        var second = 3;  
-        var result = (first > second) ? "That is true : 5>3" : "That is false : 5<3";  
+        var first = 7;  
+        var second = 9;  
+        var result = (first > second) ? "That is true : 7>9" : "That is false : 7<9";  
         console.log(result); 
     }  
 }  
