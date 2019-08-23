@@ -2,9 +2,9 @@ var ternary_operator = /** @class */ (function () {
     function ternary_operator() {
     }
     ternary_operator.prototype.condition = function () {
-        var first = 5;
-        var second = 3;
-        var result = (first > second) ? "That is true : 5>3" : "That is false : 5<3";
+        var first = 7;
+        var second = 9;
+        var result = (first > second) ? "That is true : 7>9" : "That is false : 7<9";
         console.log(result);
     };
     return ternary_operator;
