@@ -1,0 +1,22 @@
+Enter value for num1:<input type="number" [(ngModel)]="num1"/>
+<br>
+Enter value for num2:<input type="number" [(ngModel)]="num2"/>
+<br>
+<nav>
+<button class="btn btn-primary"   (click)="currentOperator='+'">Add</button>
+<button class="btn btn-danger" (click)="currentOperator='-'">Substract</button>
+<button class="btn btn-warning" (click)="currentOperator='*'">Movies</button>
+<button class="btn btn-success" (click)="currentOperator='/'">Divide</button>
+</nav>
+<br>
+
+<button class="glyphicon "></button>
+  
+
+<div [ngSwitch]="currentOperator">
+<div *ngSwitchCase="'+'">Additionresult: {{num1+num2}}</div>
+<div *ngSwitchCase="'-'">Substraction result:{{num1-num2}}</div>
+<div *ngSwitchCase="'*'"><app-movie></app-movie></div>
+<div *ngSwitchCase="'/'">Division result:{{num1/num2}}</div>
+<div *ngSwitchDefault>output2</div>
+</div>

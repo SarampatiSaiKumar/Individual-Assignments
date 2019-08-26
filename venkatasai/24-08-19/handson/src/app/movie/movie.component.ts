@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Movie} from './Movie'
 import {data} from './data'
-import { from } from 'rxjs';
+
 
 
 @Component({
