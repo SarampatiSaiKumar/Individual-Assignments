@@ -1,0 +1,6 @@
+<p>listen works!</p>
+<h4> type values to be spoken</h4>
+<input type="text" #box/>
+<hr>
+<app-speak [wordsToBeSpoken] ="speech" (speak)="onSpeak(box)"></app-speak>
+

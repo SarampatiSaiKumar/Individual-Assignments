@@ -1,0 +1,9 @@
+<p>listen works!</p>
+
+<input type="text" #box/>
+
+<input type="text" [(ngModel)]="prop"/>
+
+<app-speak  [wordsToBeSpoken] ="speech"
+               (speak)="onSpeak(box)" 
+               [(sampleNgModel)]="prop"></app-speak>

@@ -1,0 +1,7 @@
+<p>communicator works!</p>
+
+<input type="text" [(ngModel)] = "username" />
+<button (click) = "getFbPosts(username)">all the facebook data</button>
+<ol *ngFor = "let item of userPosts">
+<li> {{item.postTitle}}</li>
+</ol>
