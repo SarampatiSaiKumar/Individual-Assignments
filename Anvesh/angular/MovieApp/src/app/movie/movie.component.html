@@ -1,0 +1,17 @@
+<h1 > movies List</h1>
+   
+    <table border="1" align="center" >
+            
+        <tr>
+            <th>Title</th>
+            <th>Release Date</th>
+            <th>Rating</th>
+        </tr>
+        <tr *ngFor="let Movie of Movies">
+            <td> {{Movie.getTitle()}} </td>
+            <td> {{Movie.getReleaseDate()}} </td>
+            <td> {{Movie.getRating()}}</td>
+            
+        </tr>
+        </table>
+           

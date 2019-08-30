@@ -1,0 +1,153 @@
+<p>edit-customerdetails works!</p>
+
+<div class="row">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+        <h3 class="text-center">{{customer?.firstname |uppercase}} {{customer?.lastname |uppercase}} DETAILS </h3>
+        
+    </div>
+</div>
+<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" >
+    <div class="card" style="width:70%;margin:auto">
+        <div class="card-body">
+            <form method="post" ngForm #form = "ngForm">
+                <span [hidden]="isDisabled">
+                <div class="form-group">
+                    <label for="firstname">First Name</label>
+                    <input  type="text" 
+                            
+                            ngModel={{customer?.firstname}}
+                            required
+                            #firstname="ngModel"
+                            name="firstname"
+                            class="form-control" 
+                            id="firstname" 
+                            value={{customer?.firstname}}
+                            aria-describedby="firstname"
+                            required placeholder="Enter First name">
+                </div>
+                <div class="form-group">
+                    <label for="lastname">Last Name</label>
+                    <input id="lastname"
+                   
+                            ngModel={{customer?.lastname}} 
+                            type="text"  
+                            required
+                            #lastname="ngModel"
+                            name="lastname"
+                            class="form-control" 
+                            value={{customer?.lastname}}
+                            aria-describedby="lastname"
+                            required placeholder="Enter Last name">
+                </div>
+                <div class="form-group">
+                  <label for="pincode">Pin <code></code></label>
+                  <input id="pincode"
+                 
+                          ngModel={{customer?.pincode}} 
+                          type="text"  
+                          required
+                          #lastname="ngModel"
+                          name="lastname"
+                          class="form-control" 
+                          value={{customer?.pincode}}
+                          aria-describedby="pincode"
+                          required placeholder="Enter pincode">
+              </div>
+              <div class="form-group">
+                <label for="aadharnumber">aadhar Number</label>
+                <input id="aadharnumber" 
+                        ngModel={{customer?.aadharnumber}}
+                        [disabled]="isDisabled"
+                        type="text" 
+                        name="aadharnumber" 
+                        required
+                        #panID="ngModel"
+                        aria-describedby="aadharnumber"
+                        value={{customer?.aadharnumber}}
+                        required placeholder="Enter aadhar Number" 
+                        class="form-control">
+            </div>
+            
+              <div class="form-group">
+                <label for="panID">PAN Number</label>
+                <input id="panID" 
+                        ngModel={{customer?.panID}}
+                        [disabled]="isDisabled"
+                        type="text" 
+                        name="panID" 
+                        required
+                        #panID="ngModel"
+                        aria-describedby="panID"
+                        value={{customer?.panID}}
+                        required placeholder="Enter PAN Number" 
+                        class="form-control">
+            </div>
+            
+                <div class="form-group">
+                    <label for="email">Email Id</label>
+                    <input id="email"  
+                            ngModel={{customer?.email}}
+                            [disabled]="isDisabled"
+                            type="email" 
+                            required
+                            #email="ngModel"
+                            name="email"
+                            value={{customer?.email}}
+                            class="form-control" 
+                            aria-describedby="email"
+                            required placeholder="Enter Email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input id="phoneNumber"
+                            ngModel={{customer?.phoneNumber}}
+                            type="text" 
+                            [disabled]="isDisabled" 
+                            required
+                            #phoneNumber="ngModel"
+                            name="phoneNumber"
+                            aria-describedby="phoneNumber" 
+                            value={{customer?.phoneNumber}}
+                            required placeholder="Enter Phone Number" 
+                            class="form-control">
+                </div>
+                    <div class="form-group">
+                        <label for="branch">Select DOB</label>
+                        <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
+                            <input type="date" 
+                                 
+                                    ngModel={{customer?.dob}} 
+                                    id="dateOfBirth"
+                                    #dateOfBirth="ngModel"
+                                    name="dob"
+                                    value={{customer?.dob}} 
+                                    class="form-control datetimepicker-input"
+                                    data-target="#datetimepicker4">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="password">password</label>
+                      <input id="password"
+                              ngModel={{customer?.password}}
+                              type="text" 
+                              
+                              required
+                              #phoneNumber="ngModel"
+                              name="password"
+                              aria-describedby="password" 
+                              value={{customer?.password}}
+                              required placeholder="Enter password" 
+                              class="form-control">
+                  </div>
+                </span>
+                <div class="col-sm-12 pl-0">
+                    <p class="text-right">
+                        <button type="button" class="btn btn-block btn-space btn-primary" name="submit" (click)="editOrSave(form)">{{isDisabled?'Edit Customer Details':'Submit  Customer Details'}}</button>
+                     </p>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</div>
+<br/><br/>
