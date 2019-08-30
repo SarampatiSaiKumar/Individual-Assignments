@@ -1,0 +1,14 @@
+    <button (click)="getCall()">
+ get data
+    </button>
+    
+    
+    <div *ngFor = "let item of pData">
+        <div *ngFor = "let item1 of item">
+        <ul>
+        <li>
+        {{item1.userId}} {{item1.title}}
+        </li>
+        </ul>
+        </div>
+        </div>
